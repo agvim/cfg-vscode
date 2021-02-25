@@ -1,0 +1,52 @@
+{
+    // theme stuff
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 15,
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#586e75",
+        "editor.selectionForeground": "#002b36",
+        "editorCursor.foreground": "#839496",
+        "statusBar.background": "#93a1a1",
+        "statusBar.noFolderBackground": "#93a1a1",
+        "statusBar.debuggingBackground": "#93a1a1",
+        "statusBar.foreground": "#fdf6e3"
+    },
+
+    // small behavior changes
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "none",
+    "editor.minimap.enabled": false,
+    // "workbench.enableExperiments": false,
+    "workbench.startupEditor": "none",
+    "zenMode.hideLineNumbers": false,
+    "editor.fontLigatures": true,
+    "files.trimTrailingWhitespace": true,
+    "search.showLineNumbers": true,
+
+    // vim mode configurations
+    "vim.leader": ",",
+    "vim.useSystemClipboard": true,
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.insert": "#b58900",
+    "vim.statusBarColors.normal": "#93a1a1",
+    "vim.statusBarColors.replace": "#dc322f",
+    "vim.statusBarColors.visual": "#d33682",
+    "vim.statusBarColors.visualblock": "#d33682",
+    "vim.statusBarColors.visualline": "#d33682",
+    "vim.searchHighlightColor": "#b58900",
+    "vim.enableNeovim": true,
+    "vim.hlsearch": true,
+    //do not leave visual mode when indenting
+    "vim.visualModeKeyBindings": [
+        { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
+        { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
+    ],
+
+    // xml editing configuration
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["%"], "commands": [ { "command": "editor.emmet.action.matchTag" } ] },
+    ],
+    "xmlTools.enableXmlTreeViewCursorSync": true,
+    "emmet.extensionsPath": "~/.config/emmet/",
+}

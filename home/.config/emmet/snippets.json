@@ -1,0 +1,19 @@
+{
+    "xml": {
+        "snippets": {
+            // general docbook snippets
+            "p": "para",
+            "li": "listitem",
+            "il": "itemizedlist", // complex example: 'il>li*4>p' produces a list with 4 list items with a para
+            "ol": "orderedlist",
+            "em": "emphasis[role=${1:italics}]", //emphasis with a default role value of italics
+            "xr": "xref[linkend]/",
+            "en": "entry",
+            "row": "row",
+            "cs": "colspec[colwidth=${1:1*}]/",
+            "tab": "table[xml:id='tab.${1}']>title+tgroup[cols='${2:1}']>cs/+(thead>row>)+(tbody>row>)",
+            "fig": "figure[xml:id='fig.${1}']>title+mediaobject>imageobject>imagedata[fileref='../res/img/${2}']/",
+            "bib": "biblioentry[xml:id='bib.${1}']>title+(author>personname)+releaseinfo{v${2}}"
+        }
+    }
+}
