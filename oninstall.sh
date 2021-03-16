@@ -1,5 +1,5 @@
 #!/bin/bash
-EXTENSIONS=("vscodevim.vim" "editorconfig.editorconfig" "formulahendry.auto-rename-tag" "formulahendry.auto-close-tag")
+EXTENSIONS=("asvetliakov.vscode-neovim" "editorconfig.editorconfig" "formulahendry.auto-rename-tag" "formulahendry.auto-close-tag")
 for PACKAGE in "${EXTENSIONS[@]}"
 do
     code --install-extension $PACKAGE

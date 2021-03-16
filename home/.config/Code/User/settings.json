@@ -20,6 +20,7 @@
     // "workbench.enableExperiments": false,
     "workbench.startupEditor": "none",
     "zenMode.hideLineNumbers": false,
+    "zenMode.fullScreen": false,
     "editor.fontLigatures": true,
     "files.trimTrailingWhitespace": true,
     "search.showLineNumbers": true,
@@ -42,11 +43,24 @@
         { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
         { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
     ],
-
-    // xml editing configuration
+    // xml editing configuration for vim
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["%"], "commands": [ { "command": "editor.emmet.action.matchTag" } ] },
     ],
+    // xml configuration
     "xmlTools.enableXmlTreeViewCursorSync": true,
     "emmet.extensionsPath": "~/.config/emmet/",
+
+    // as an alternative to the vim extension, use the neovim one which has better integration
+    // requires neovim 5.0+ (nightly)
+    "vscode-neovim.neovimExecutablePaths.linux": "/opt/nvim-nightly",
+
+    // misc
+    "workbench.editorAssociations": [
+
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }
