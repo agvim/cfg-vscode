@@ -49,7 +49,13 @@
     ],
     // xml configuration
     "xmlTools.enableXmlTreeViewCursorSync": true,
-    "emmet.extensionsPath": "~/.config/emmet/",
+    "emmet.extensionsPath": [
+        "~/.config/emmet/"
+    ],
+
+    "emmet.includeLanguages": {
+        "xml": "xml"
+    },
 
     // as an alternative to the vim extension, use the neovim one which has better integration
     // requires neovim 5.0+ (nightly)
